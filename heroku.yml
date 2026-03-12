@@ -1,0 +1,10 @@
+# SBLHACKER-MD Heroku Deployment Config
+build:
+  docker:
+    web: Dockerfile
+    
+run:
+  web: npm start
+
+# No changes needed in functionality, just added comment for branding
+# Deployed by SBLHACKER 🤖 | Join Channel: https://whatsapp.com/channel/0029VbBVDAc1noz5dhxnYO3r

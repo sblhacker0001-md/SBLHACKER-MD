@@ -1,0 +1,19 @@
+name: sblhacker-md
+services:
+  - name: sblhacker-md-service
+    type: web
+    ports:
+      - 5000
+    routes:
+      - path: "/"
+    build:
+      type: docker
+      dockerfile: ./Dockerfile
+    regions:
+      - fra
+      - sin
+    env:
+      - key: BOT_NAME
+        value: "SBLHACKER-MD"
+      - key: OWNER_NAME
+        value: "SBLHACKER"

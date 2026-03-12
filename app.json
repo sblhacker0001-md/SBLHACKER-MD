@@ -1,0 +1,89 @@
+{
+  "name": "SBLHACKER-MD",
+  "version": "3.0.0",
+  "description": "WhatsApp Bot made by SBLHACKER | NO SESSION ID NEEDED! Sirf number dalo aur code aayo",
+  "website": "https://whatsapp.com/channel/0029VbBVDAc1noz5dhxnYO3r",
+  "logo": "https://i.postimg.cc/8Cyn5rh2/OIG3-1.jpg",
+  "keywords": ["sblhacker-md", "SBLHACKER BOT", "whatsapp-bot", "no-session-id"],
+  "repository": "https://github.com/sblhacker0001/SBLHACKER-MD",
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "MODE": {
+      "description": "Set Mode to 'public' to work in all chats only, 'inbox' to work in pm(inbox) chats only or 'private' to work for you only. Default is 'public'.",
+      "required": false,
+      "value": "public"
+    },
+    "OWNER_NAME": {
+      "description": "Put Owner Name Here",
+      "required": true,
+      "value": "SBLHACKER"
+    },
+    "BOT_PIC": {
+      "description": "Bot Display Picture URL",
+      "required": false,
+      "value": "https://i.postimg.cc/8Cyn5rh2/OIG3-1.jpg"
+    },
+    "OWNER_NUMBER": {
+      "description": "Put only one Owner Number Here ie 92xxxxx",
+      "required": true,
+      "value": "923427582273"
+    },
+    "ANTI_DELETE": {
+      "description": "Can be set to 'inboxonly' to recover for personal chats only, 'chatsonly' to recover for groups and personal chats only or 'true' to recover all chats and status updates.",
+      "required": false,
+      "value": "true"
+    },
+    "SUDO_NUMBERS": {
+      "description": "Put Sudo Numbers separated by comma Here ie 92xxxx,92xxxxx,92xxxxx.",
+      "required": false,
+      "value": "923427582273"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Make it 'true' if you want bot to view statuses.",
+      "required": true,
+      "value": "true"
+    },
+    "AUTO_LIKE_STATUS": {
+      "description": "Make it 'true' if you want bot to read and like statuses.",
+      "required": false,
+      "value": "true"
+    },
+    "STATUS_REPLY_MSG": {
+      "description": "Set your status reply message to be sent after bot views status",
+      "required": false,
+      "value": "Status Viewed By SBLHACKER-MD ✅️ Join: https://whatsapp.com/channel/0029VbBVDAc1noz5dhxnYO3r"
+    },
+    "ANTICALL_MSG": {
+      "description": "Put Your own Anticall Message",
+      "required": false,
+      "value": "*_📞 Auto Call Reject Mode Activated by SBLHACKER-MD. Join: https://whatsapp.com/channel/0029VbBVDAc1noz5dhxnYO3r_*"
+    },
+    "BOT_NAME": {
+      "description": "Your Bot Name",
+      "required": false,
+      "value": "SBLHACKER-MD"
+    },
+    "PACK_NAME": {
+      "description": "Your sticker pack name.",
+      "required": false,
+      "value": "SBLHACKER-MD"
+    },
+    "PREFIX": {
+      "description": "Your Bot Prefix (default: .)",
+      "required": true,
+      "value": "."
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
